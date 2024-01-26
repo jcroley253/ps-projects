@@ -2,7 +2,7 @@ DESCRIPTION: This application is a suite of tools to aid Fuel QA Analysts/Engine
 
 Reference Doc: N/A 
 Package location: 
-    - Server: WAPFUL01094P04
+    - Server: Toolkit Server Name Here
     - File Path: D:\Tools\Fuel_QA_Automation_Tool_Suite
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -14,5 +14,3 @@ INSTALL INSRUCTIONS:
     - NOTE: This will add a shortcut to your desktop and may trigger an update
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-BUILD STEPS PERFORMED IN ORDER:
