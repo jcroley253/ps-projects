@@ -604,7 +604,7 @@ Function logCollector {
         
         # Paths to Site Server files
         $ss = "\\$server\D$"
-        $ssTLog = "$ss\Costco_logs\FuelTLogUpload.log"
+        $ssTLog = "$ss\cw_logs\FuelTLogUpload.log"
         $ssConfig = "$ss\ConfigClient\ConfigClient\ConfigClient.log"
         $ssUpgrade = "$ss\PATHTOFILE\sw-upgrade-engine\log\access.log" 
         $ssAuth = "$ss\PATHTOFILE\smartcrind_PumpAuthSiteService*"
@@ -672,7 +672,7 @@ Function logCollector {
         # Moves logs from test fms and site server to destination folder
         try {
             LogIt -Message "Gathering log collection for FT#$ProjectNumber QA Test." -Severity Information
-            Copy-Item -Path $ssTLog, $ssConfig, $ssUpgrade, $ssAuth, $ssDeadPool, $ssOutput, L:\costco_logs, L:\ftservlog.log -Recurse -Destination $destination -Force
+            Copy-Item -Path $ssTLog, $ssConfig, $ssUpgrade, $ssAuth, $ssDeadPool, $ssOutput, L:\cw_logs, L:\ftservlog.log -Recurse -Destination $destination -Force
         }
         catch {
             LogIt -Message "FAILED to gather log collection." -Severity Error -ForegroundColor Red
